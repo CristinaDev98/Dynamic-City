@@ -1,0 +1,223 @@
+<!-- 10 Ottobre 2022
+Esercizio di ripasso HTML e CSS
+In particolare posizionamento assoluto e relativo, box-shadow, gradient, le unita' di misura 
+Realizzare la vista di una citta' al tramonto, utilizzando unicamente i div, le proprieta': background, border, box-shadow, position, top, left, right, bottom, border-radius. Potete utilizzare anche altre proprieta' ma e' vietato l'utilizzo di immagini. E' possibile utilizzare i gradienti ed eventualmente se volete le animazioni css per rendere dinamica la citta'.
+Cercare di realizzare questo esercizio tenendo conto che la pagina potrebbe essere ridimensionata e che la citta' non deve esplodere nel caso in cui questo avvenga.  extra dinamicizzare con 3 bottoni la mattina, pomeriggio e era-->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>City</title>
+</head>
+<body>
+    <main>
+        <div class="world">
+        <div class="sun"></div>
+        <div id="background-wrap">
+            <div class="x1">
+                <div class="cloud"></div>
+            </div>
+            <div class="x2">
+                <div class="cloud"></div>
+            </div>
+            <div class="x3">
+                <div class="cloud"></div>
+            </div>
+            <div class="x4">
+                <div class="cloud"></div>
+            </div>
+            <div class="x5">
+                <div class="cloud"></div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="city-coating">
+            <div class="coating">
+                <div class="house-coating">
+                <div class="tree-coating">
+                    <div class="tree">
+                      <div class="base"></div>
+                    </div>
+                </div>
+                
+                <div class="building building2">
+                    <div class="window-wrap">
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-window"></div>
+                      <div class="building-door"></div>
+                    </div>
+                  </div>
+                <div class="building-coating">
+                        <div class="building building1">
+                            <div class="window-coating">
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-door"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree-coating">
+                        <div class="tree">
+                          <div class="base"></div>
+                        </div>
+                    </div>
+                    <div class="house1">
+                        <div class="house1-roof">
+                            <div class="window">
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                            </div>
+                            <div class="house1-center">
+                                <div class="house1-center-roof"></div>
+                                <div class="window-coating">
+                                    <div class="house1-window window-center"></div>
+                                    <div class="house1-center-door"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree-coating">
+                        <div class="tree">
+                          <div class="base"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="building-coating">
+                        <div class="building building1">
+                            <div class="window-coating">
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-window"></div>
+                                <div class="building-door"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree-coating">
+                        <div class="tree">
+                          <div class="base"></div>
+                        </div>
+                    </div>
+                    <div class="building-wrapper">
+                        <div class="building building2">
+                          <div class="window-wrap">
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-door"></div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="house1">
+                        <div class="house1-roof">
+                            <div class="window">
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                                <div class="house1-window"></div>
+                            </div>
+                            <div class="house1-center">
+                                <div class="house1-center-roof"></div>
+                                <div class="window-coating">
+                                    <div class="house1-window window-center"></div>
+                                    <div class="house1-center-door"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree-coating">
+                        <div class="tree">
+                          <div class="base"></div>
+                        </div>
+                    </div>
+                    <div class="building-wrapper">
+                        <div class="building building2">
+                          <div class="window-wrap">
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-window"></div>
+                            <div class="building-door"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tree-coating">
+                        <div class="tree">
+                          <div class="base"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="ground">
+        <div class="country-wrap">
+            <!--div class="grass"></div-->
+            <div class="street">
+                <div class="car">
+                <div class="car-body">
+                    <div class="car-top-back">
+                        <div class="back-curve"></div>
+                    </div>
+                    <div class="car-gate"></div>
+                    <div class="car-top-front">
+                        <div class="wind-sheild"></div>
+                    </div>
+                    <div class="bonet-front"></div>
+                    <div class="stepney"></div>
+                </div>
+                <div class="boundary-tyre-cover">
+                    <div class="boundary-tyre-cover-back-bottom"></div>
+                    <div class="boundary-tyre-cover-inner"></div>	
+                </div>
+                <div class="tyre-cover-front">
+                    <div class="boundary-tyre-cover-inner-front"></div>
+                </div>
+                <div class="base-axcel">
+                    
+                </div>
+                <div class="front-bumper"></div>
+                <div class="tyre">		
+                    <div class="gap"></div>	
+                </div>
+                <div class="tyre front">
+                    <div class="gap"></div>	
+                </div>
+                <div class="car-shadow"></div>
+            </div>
+            </div>
+            <div class="street-stripe"></div>
+            <div class="hill"></div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
